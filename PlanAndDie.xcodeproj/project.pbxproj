@@ -12,9 +12,11 @@
 		74C0C28920B31F7200A3C87B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C0C28720B31F7200A3C87B /* Main.storyboard */; };
 		74C0C28B20B31F7500A3C87B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74C0C28A20B31F7500A3C87B /* Assets.xcassets */; };
 		74C0C28E20B31F7500A3C87B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74C0C28C20B31F7500A3C87B /* LaunchScreen.storyboard */; };
+		C3FB5EB45FFB1637D3B240B8 /* Pods_PlanAndDie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92D5AFD9FC747FA6A2DBBEE6 /* Pods_PlanAndDie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6944382B9EC87B313E444083 /* Pods-PlanAndDie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanAndDie.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlanAndDie/Pods-PlanAndDie.release.xcconfig"; sourceTree = "<group>"; };
 		74C0C28020B31F7200A3C87B /* PlanAndDie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlanAndDie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74C0C28320B31F7200A3C87B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74C0C28520B31F7200A3C87B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		74C0C28A20B31F7500A3C87B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74C0C28D20B31F7500A3C87B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74C0C28F20B31F7500A3C87B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92D5AFD9FC747FA6A2DBBEE6 /* Pods_PlanAndDie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlanAndDie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B269A157888A49CC65D666F3 /* Pods-PlanAndDie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlanAndDie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlanAndDie/Pods-PlanAndDie.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3FB5EB45FFB1637D3B240B8 /* Pods_PlanAndDie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C8A5D4F57061BA62A96542C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B269A157888A49CC65D666F3 /* Pods-PlanAndDie.debug.xcconfig */,
+				6944382B9EC87B313E444083 /* Pods-PlanAndDie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3949CB184AAA833AE50F1ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92D5AFD9FC747FA6A2DBBEE6 /* Pods_PlanAndDie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		74C0C27720B31F7200A3C87B = {
 			isa = PBXGroup;
 			children = (
 				74C0C28220B31F7200A3C87B /* PlanAndDie */,
 				74C0C28120B31F7200A3C87B /* Products */,
+				2C8A5D4F57061BA62A96542C /* Pods */,
+				3949CB184AAA833AE50F1ADD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74C0C29220B31F7500A3C87B /* Build configuration list for PBXNativeTarget "PlanAndDie" */;
 			buildPhases = (
+				260936EAC0DD979103948159 /* [CP] Check Pods Manifest.lock */,
 				74C0C27C20B31F7200A3C87B /* Sources */,
 				74C0C27D20B31F7200A3C87B /* Frameworks */,
 				74C0C27E20B31F7200A3C87B /* Resources */,
+				15682ACEF380036752F5E749 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,47 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15682ACEF380036752F5E749 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-PlanAndDie/Pods-PlanAndDie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlanAndDie/Pods-PlanAndDie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		260936EAC0DD979103948159 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PlanAndDie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		74C0C27C20B31F7200A3C87B /* Sources */ = {
@@ -278,14 +345,12 @@
 		};
 		74C0C29320B31F7500A3C87B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B269A157888A49CC65D666F3 /* Pods-PlanAndDie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlanAndDie/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rak.PlanAndDie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -295,14 +360,12 @@
 		};
 		74C0C29420B31F7500A3C87B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6944382B9EC87B313E444083 /* Pods-PlanAndDie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = PlanAndDie/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rak.PlanAndDie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
